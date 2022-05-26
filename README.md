@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Title
+# Portfolio setup and mobile version skeleton
 
 > In this project I built the header and headline sections of a mobile version of a portfolio.
 
@@ -46,7 +46,7 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 
 ## Authors
 
-👤 **Author1**
+👤 **Kiyong Bohbo**
 
 - GitHub: [krisbobo](https://github.com/krisbobo)
 - Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
