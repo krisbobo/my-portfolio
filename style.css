@@ -194,3 +194,144 @@ h4 {
   filter: blur(50px);
   position: relative;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.heading {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  color: #9490ff;
+  margin: 170px 30px 75px 30px;
+}
+
+.divider3 > span {
+  position: absolute;
+  height: 0;
+  left: 20px;
+  right: 20px;
+  top: 1245px;
+  border: 1px solid #646369;
+}
+
+.work-1 > img {
+  width: 85%;
+  margin: 5px 30px 5px 30px;
+}
+
+.work-2 > img {
+  width: 85%;
+  margin: 5px 30px 5px 30px;
+}
+
+.work-3 > img {
+  width: 85%;
+  margin: 5px 30px 5px 30px;
+}
+
+.work-4 > img {
+  width: 85%;
+  margin: 5px 30px 5px 30px;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 30px;
+  display: flex;
+  color: #fff;
+}
+
+.supporting-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  margin: 0 30px 0 30px;
+}
+
+.lang-box {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  margin: 20px 35px 20px 30px;
+  justify-content: space-between;
+}
+
+.lang-box li {
+  border-right: 1px solid #555;
+  padding: 10px 20px;
+}
+
+.lang-box .border-check {
+  border-right: 0;
+}
+
+.work-button > button {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #edecff;
+  background: #7d73fc;
+  padding: 12px;
+  margin: 10px 0 15px 30px;
+  border: 0;
+}
+
+.work-button > button:hover {
+  background: #7d73fc;
+  box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
+}
+
+.work-button > button:focus {
+  background: #5e42d7;
+}
+
+.work-1 {
+  background-image: url(./images/left1.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 80px;
+}
+
+.work-2 {
+  background-image: url(./images/right1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 150px;
+}
+
+.work-3 {
+  background-image: url(./images/left2.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: 220px;
+}
+
+.work-4 {
+  background-image: url(./images/right2.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 220px;
+}
