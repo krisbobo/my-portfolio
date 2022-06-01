@@ -2,7 +2,7 @@
 
 # Portfolio setup and mobile version skeleton
 
-> In this project I built the header and headline sections of a mobile version of a portfolio.
+> In this project I built the various sections of my mobile version portfolio.
 
 ## Built With
 
@@ -51,6 +51,12 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 - GitHub: [krisbobo](https://github.com/krisbobo)
 - Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
 - LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
+
+👤 **Okoye Charles**
+
+- GitHub: [krisbobo](https://github.com/OkoyeCharles)
+- Twitter: [okoyecharles](https://twitter.com/OkoyeCharles_)
+- LinkedIn: [okoyecharles](https://www.linkedin.com/in/charles-okoye-633374236)
 
 ## 🤝 Contributing
 
