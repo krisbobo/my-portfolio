@@ -55,6 +55,8 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 👤 **Okoye Charles**
 
 - GitHub: [krisbobo](https://github.com/OkoyeCharles)
+- Twitter: [okoyecharles](https://twitter.com/OkoyeCharles_)
+- LinkedIn: [okoyecharles](https://www.linkedin.com/in/charles-okoye-633374236)
 
 ## 🤝 Contributing
 
