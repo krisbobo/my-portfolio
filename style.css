@@ -87,12 +87,12 @@ header {
   margin: 0 30px 0 30px;
 }
 
-.divider {
+.divider1 {
   position: absolute;
   height: 0;
   left: 20px;
   right: 20px;
-  top: 475px;
+  top: 530px;
   border: 1px solid #646369;
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 #frame {
-  width: 42%;
+  width: 41%;
   margin-top: 15px;
   background-image: url(./images/right.png);
   background-repeat: no-repeat;
@@ -167,12 +167,12 @@ h4 {
   color: #f5f5ff;
 }
 
-.divider {
+.divider2 {
   position: absolute;
   height: 0;
   left: 20px;
   right: 20px;
-  top: 920px;
+  top: 940px;
   border: 1px solid #646369;
 }
 
@@ -232,31 +232,16 @@ h4 {
   padding: 23px;
 }
 
-.divider3 > span {
+.divider-work {
   position: absolute;
   height: 0;
   left: 20px;
   right: 20px;
-  top: 1245px;
+  top: 1255px;
   border: 1px solid #646369;
 }
 
-.work-1 > img {
-  width: 85%;
-  margin: 5px 30px 5px 30px;
-}
-
-.work-2 > img {
-  width: 85%;
-  margin: 5px 30px 5px 30px;
-}
-
-.work-3 > img {
-  width: 85%;
-  margin: 5px 30px 5px 30px;
-}
-
-.work-4 > img {
+.col-1 > img {
   width: 85%;
   margin: 5px 30px 5px 30px;
 }
@@ -390,6 +375,10 @@ h4 {
   font-weight: 500;
 }
 
+.contact-description h2 {
+  display: none;
+}
+
 .contact-form textarea {
   height: 148px;
 }
@@ -418,7 +407,7 @@ h4 {
   color: white;
   font-weight: 500;
   position: relative;
-  left: 37%;
+  left: 40%;
 }
 
 .form-button:hover {
@@ -498,7 +487,7 @@ h4 {
     margin: auto;
     background-image: url(./images/leftcircle.png), url(./images/rightcircle.png);
     background-repeat: no-repeat;
-    background-position: 0% 3%, 100% 8%;
+    background-position: 0% 3%, 100% 11%;
   }
 
   .headline {
@@ -544,12 +533,13 @@ h4 {
     color: #B3BAC5;
   }
   
-  .divider {
+  .divider1,
+  .divider2 {
     position: static;
     margin: 60px 0px 20px 30px;
     padding-right: 10px;
     height: 0;
-    width: 85%;
+    width: 100%;
     border: 1px solid #646369;
   }
   
@@ -558,6 +548,7 @@ h4 {
     flex-direction: row;
     justify-content: center;
     position: static;
+    margin-left: 10px;
   }
 
   .about > * {
@@ -631,11 +622,119 @@ h4 {
     position: static;
   }
 
+  .divider-work {
+    position: static;
+    margin: -85px 0px 100px -2px;
+    padding-right: 10px;
+    height: 0;
+    width: 100%;
+    border: 1px solid #646369;
+  }
+
   .heading {
     font-weight: 700;
     font-size: 64px;
     line-height: 114px;
     color: #9390FF;
+  }
+
+  .works {
+    width: 100%;
+    background-image: url(./images/desktop1.png), url(./images/desktop2.png), url(./images/desktop3.png), url(./images/desktop4.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-x: left, right, left, right;
+    background-position-y: 18%, 50%, 80%, 102%;
+  }
+
+  .work-width-constrict {
+    padding: 15px 90px;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-1 {
+    flex: 3;
+  }
+
+  .col-1 img {
+    width: 90%;
+    height: 427px;
+  }
+
+  .col-2 {
+    flex: 2;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+  }
+
+  .supporting-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #DFE1E6;
+  }
+
+  .lang-box {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  .work:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .grid-container {
+    grid-gap: 88px;
+  }
+
+  .grid-container > div {
+    background-image: none;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .contact-description h1 {
+    display: none;
+  }
+
+  .contact-description .deskt {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+
+  .contact-width {
+    width: 50%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #3A3837 solid;
+    padding-top: 10px ;
+  }
+
+  .social-handle-footer {
+    padding: 0px 20px;
+    width: 240px;
+    border-top: none;
   }
 
 }
