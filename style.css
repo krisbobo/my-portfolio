@@ -587,7 +587,7 @@ h4 {
       opacity: 1;
     }
   }
-  
+
   #greeting {
     font-weight: 700;
     font-size: 90px;
@@ -618,7 +618,7 @@ h4 {
   .width-reduction {
     width: 90%;
   }
-  
+
   .divider1,
   .divider2 {
     position: static;
