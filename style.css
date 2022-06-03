@@ -493,7 +493,7 @@ h4 {
     position: relative;
   }
 
-   /* nav-menu animations*/
+  /* nav-menu animations */
 
   .nav-menu a::after {
     content: '';
@@ -501,7 +501,7 @@ h4 {
     background: #9391ff;
     height: 3px;
     width: 100%;
-    left: 0px;
+    left: 0;
     bottom: -5px;
     transform: scale(0, 1);
     transition: 0.5s;
@@ -547,10 +547,18 @@ h4 {
     }
 
     to {
-      margin-left: 0px;
-      margin-right: 0px;
+      margin-left: 0;
+      margin-right: 0;
       opacity: 1;
     }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #b3bac5;
   }
 
   .width-reduction .text {
@@ -572,14 +580,13 @@ h4 {
     }
 
     to {
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-top: 0;
+      margin-bottom: 0;
       margin-right: 30px;
       margin-left: 30px;
       opacity: 1;
     }
   }
-
 
   #greeting {
     font-weight: 700;
@@ -610,14 +617,6 @@ h4 {
 
   .width-reduction {
     width: 90%;
-  }
-
-  .text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #b3bac5;
   }
 
   .divider1,
@@ -751,12 +750,12 @@ h4 {
     height: 427px;
     transition: 1s;
   }
-  
-   /* work-section animations*/
+
+  /* work-section animations */
 
   .col-1 img:hover {
     width: 95%;
-  } 
+  }
 
   .col-2 {
     flex: 2;
