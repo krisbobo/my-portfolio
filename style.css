@@ -449,6 +449,23 @@ h4 {
     justify-content: center;
   }
 
+  .nav-bar > div {
+    animation-duration: 2s;
+    animation-name: logo-turn;
+  }
+
+  @keyframes logo-turn {
+    from {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+
+    to {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+
   #menu {
     position: absolute;
     display: none;
@@ -473,6 +490,29 @@ h4 {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
+    position: relative;
+  }
+
+  /* nav-menu animations */
+
+  .nav-menu a::after {
+    content: '';
+    position: absolute;
+    background: #9391ff;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0, 1);
+    transition: 0.5s;
+  }
+
+  .nav-menu .mail:hover::after {
+    transform: scale(0, 1);
+  }
+
+  .nav-menu a:hover::after {
+    transform: scale(1, 1);
   }
 
   .nav-menu li {
@@ -492,6 +532,60 @@ h4 {
 
   .headline {
     margin: 15px 90px;
+  }
+
+  .headline > h1 {
+    animation-duration: 1.5s;
+    animation-name: r-slidein;
+  }
+
+  @keyframes r-slidein {
+    from {
+      margin-left: 500px;
+      margin-right: -500px;
+      opacity: 0;
+    }
+
+    to {
+      margin-left: 0;
+      margin-right: 0;
+      opacity: 1;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #b3bac5;
+  }
+
+  .width-reduction .text {
+    animation-duration: 1.5s;
+    animation-name: slideup;
+  }
+
+  @keyframes slideup {
+    from {
+      margin-top: 100px;
+      margin-bottom: -100px;
+      margin-right: 50px;
+      margin-left: 10px;
+      opacity: 0;
+    }
+
+    20% {
+      opacity: 0;
+    }
+
+    to {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 30px;
+      margin-left: 30px;
+      opacity: 1;
+    }
   }
 
   #greeting {
@@ -523,14 +617,6 @@ h4 {
 
   .width-reduction {
     width: 90%;
-  }
-
-  .text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #b3bac5;
   }
 
   .divider1,
@@ -662,6 +748,13 @@ h4 {
   .col-1 img {
     width: 90%;
     height: 427px;
+    transition: 1s;
+  }
+
+  /* work-section animations */
+
+  .col-1 img:hover {
+    width: 95%;
   }
 
   .col-2 {
