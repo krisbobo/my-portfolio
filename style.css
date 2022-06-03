@@ -685,7 +685,14 @@ h4 {
   .col-1 img {
     width: 90%;
     height: 427px;
+    transition: 1s;
   }
+  
+   /* work-section animations*/
+
+  .col-1 img:hover {
+    width: 95%;
+  } 
 
   .col-2 {
     flex: 2;
