@@ -450,7 +450,7 @@ h4 {
   }
 
   #menu {
-    position: absolute; 
+    position: absolute;
     display: none;
   }
 
@@ -464,12 +464,12 @@ h4 {
   .nav-menu {
     display: flex;
     position: static;
-    margin: 0px;
+    margin: 0;
   }
 
   .nav-menu a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #fff;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -482,7 +482,7 @@ h4 {
   }
 
   body {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     margin: auto;
     background-image: url(./images/leftcircle.png), url(./images/rightcircle.png);
@@ -499,7 +499,7 @@ h4 {
     font-size: 90px;
     line-height: 105px;
     text-align: center;
-    color: #9391FF;
+    color: #9391ff;
     margin-bottom: 5px;
   }
 
@@ -508,7 +508,7 @@ h4 {
     font-size: 40px;
     line-height: 47px;
     text-align: center;
-    color: #DFE1E6;
+    color: #dfe1e6;
   }
 
   .about-headline {
@@ -530,19 +530,19 @@ h4 {
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: #B3BAC5;
+    color: #b3bac5;
   }
-  
+
   .divider1,
   .divider2 {
     position: static;
-    margin: 60px 0px 20px 30px;
+    margin: 60px 0 20px 30px;
     padding-right: 10px;
     height: 0;
     width: 100%;
     border: 1px solid #646369;
   }
-  
+
   .about {
     display: flex;
     flex-direction: row;
@@ -561,7 +561,7 @@ h4 {
   }
 
   #skill {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 15px;
   }
 
@@ -576,7 +576,7 @@ h4 {
   }
 
   .language-items {
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
     font-size: 13.1389px;
     line-height: 25px;
@@ -584,13 +584,13 @@ h4 {
 
   .framework-items {
     font-weight: 400;
-    color: #ffffff;
+    color: #fff;
     font-size: 14.1935px;
     line-height: 28px;
   }
 
   .skill-items {
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
     font-size: 14.6667px;
     line-height: 28px;
@@ -624,7 +624,7 @@ h4 {
 
   .divider-work {
     position: static;
-    margin: -85px 0px 100px -2px;
+    margin: -85px 0 100px -2px;
     padding-right: 10px;
     height: 0;
     width: 100%;
@@ -635,7 +635,7 @@ h4 {
     font-weight: 700;
     font-size: 64px;
     line-height: 114px;
-    color: #9390FF;
+    color: #9390ff;
   }
 
   .works {
@@ -679,14 +679,14 @@ h4 {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #DFE1E6;
+    color: #dfe1e6;
   }
 
   .lang-box {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   .work:nth-child(even) {
@@ -727,14 +727,13 @@ h4 {
   footer {
     display: flex;
     justify-content: center;
-    border-top: 1px #3A3837 solid;
-    padding-top: 10px ;
+    border-top: 1px #3a3837 solid;
+    padding-top: 10px;
   }
 
   .social-handle-footer {
-    padding: 0px 20px;
+    padding: 0 20px;
     width: 240px;
     border-top: none;
   }
-
 }
