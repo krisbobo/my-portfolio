@@ -11,18 +11,12 @@
 <body>
 
 <header>
-    <nav>
-        <ul>
-            <li><a id="logo" href="#">John Doe</a></li>
-            <li><a id="menu" href="#"><img src="./images/Union.png" alt="Website menu"></a></li>
-        </ul>
-    </nav>
-</header>
+    <nav class="nav-bar">
+        
+        <div><a id="logo" href="#">John Doe</a></div>
+        <img id="menu" src="./images/Union.png" alt="Website menu">
 
-<header class="desktop-header">
-    <nav>
-        <ul>
-            <li><a class="desktop-nav" href="#">John Doe</a></li>
+        <ul class="nav-menu">
             <li><a class="desktop-nav" href="#">Portfolio</a></li>
             <li><a class="desktop-nav" href="#">About</a></li>
             <li><a class="desktop-nav" href="#">Contact</a></li>
@@ -31,142 +25,70 @@
     </nav>
 </header>
 
-<section class="desktop-headline">
-    <div class="heading-with-bgd">
-        <h1 id="my-name">Laura Jong</h1>
-    </div>
+<section class="headline">
+    <h1 id="greeting">Laura Jong</h1>
+    <h2 class="introduction">Software Developer</h2>
+
+    <div class="about-headline">
+        <div class="width-reduction">
+            <p class="text">I can help you build a product, feature or website. 
+                Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
+            
+            <div class="divider"></div>
+
+            <div class="about">
+                <div id="lang" class="about-lang">
+                <h4>Language</h4>
+                    <ul class="language-items">
+                        <li>Html</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Ruby</li>
+                    </ul>
+                </div>
+
+                <div id="frame" class="about-frame">
+                <h4>Frameworks</h4>
+                    <ul class="framework-items">
+                        <li>Bootstrap</li>
+                        <li>Ruby on rails</li>
+                        <li>RSpec</li>
+                        <li>Capybara</li>
+                        <li>Selenium</li>
+                    </ul>
+                </div>
+
+                <div id="skill" class="about-skill">
+                <h4>Skills</h4>
+                    <ul class="skill-items">
+                        <li>Codekit</li>
+                        <li>GitHub</li>
+                        <li>Codepen</li>
+                        <li>Gitlab</li>
+                        <li>Terminal</li>
+                    </ul>
+                </div>
+            </div>
     
-    <div>
-    <h2 class="work-title">Software Developer</h2>
+            <div class="divider"></div>
+        </div>
     </div>
 
-    <div>
-    <p class="intro">I can help you build a product, feature or website. 
-    Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-    </div>
-
-    <div class="desktop-divider">
-        <span></span>
-    </div>
-    
-    <div class="desktop-about">
-        <div id="lang1" class="destop-lang">
-        <h4>Language</h4>
-            <ul class="lang-items">
-                <li>Html</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Ruby</li>
-            </ul>
+    <div class="social-container">
+        <div class="button">
+            <a href="#"><img class="interaction" src="./images/button1.png" alt="Button image"></a>
         </div>
-    
-        <div id="frame1" class="desktop-frame">
-            <h4>Frameworks</h4>
-            <ul class="frame-items">
-                <li>Bootstrap</li>
-                <li>Ruby on rails</li>
-                <li>RSpec</li>
-                <li>Capybara</li>
-                <li>Selenium</li>
-            </ul>
-        </div>
-    
-        <div id="skill1" class="desktop-skill">
-            <h4>Skills</h4>
-            <ul class="skill1-items">
-                <li>Codekit</li>
-                <li>GitHub</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-            </ul>
-        </div>
-    
-        <div class="desktop-divider2">
-            <span></span>
-        </div>
-
-    </div>
-    
-    <div>
-        <ul class="desktop-social-handle">
+        <ul class="social-handle">
             <li><a href="#"><img src="./images/twitter.png" alt="twitter image"></a></li>
             <li><a href="#"><img src="./images/linkedin.png" alt="linkedin image"></a></li>
             <li><a href="#"><img src="./images/medium.png" alt="medium image"></a></li>
             <li><a href="#"><img src="./images/github.png" alt="github image"></a></li>
             <li><a href="#"><img src="./images/angellist.png" alt="angellist image"></a></li>
         </ul>
-    
-        <div class="desktop-button">
-            <a href="#"><img class="desktop-button1" src="./images/button.png" alt="Button image"></a>
-            <a href="#"><img class="desktop-button2" src="./images/button.png" alt="Button image"></a>
+
+        <div id="m-button" class="button">
+            <a href="#"><img class="interaction" src="./images/button.png" alt="Button image"></a>
         </div>
-    </div>
-</section>
-
-<section class="headline">
-    <div class="heading-with-background">
-    <h1 id="greeting">Laura Jong</h1>
-    </div>
-
-    <h2 class="introduction">Software Developer</h2>
-    <p class="text">I can help you build a product, feature or website. 
-        Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
-    
-    <div class="divider">
-        <span></span>
-    </div>
-
-    <div class="about">
-        <div id="lang" class="about-lang">
-        <h4>Language</h4>
-            <ul class="language-items">
-                <li>Html</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Ruby</li>
-            </ul>
-        </div>
-
-        <div id="frame" class="about-frame">
-        <h4>Frameworks</h4>
-             <ul class="framework-items">
-                <li>Bootstrap</li>
-                <li>Ruby on rails</li>
-                <li>RSpec</li>
-                <li>Capybara</li>
-                <li>Selenium</li>
-            </ul>
-        </div>
-
-        <div id="skill" class="about-skill">
-        <h4>Skills</h4>
-            <ul class="skill-items">
-                <li>Codekit</li>
-                <li>GitHub</li>
-                <li>Codepen</li>
-                <li>Gitlab</li>
-                <li>Terminal</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="divider2">
-        <span></span>
-    </div>
-
-    <ul class="social-handle">
-        <li><a href="#"><img src="./images/twitter.png" alt="twitter image"></a></li>
-        <li><a href="#"><img src="./images/linkedin.png" alt="linkedin image"></a></li>
-        <li><a href="#"><img src="./images/medium.png" alt="medium image"></a></li>
-        <li><a href="#"><img src="./images/github.png" alt="github image"></a></li>
-        <li><a href="#"><img src="./images/angellist.png" alt="angellist image"></a></li>
-    </ul>
-
-
-    <div class="button">
-        <a href="#"><img class="interaction" src="./images/button.png" alt="Button image"></a>
     </div>
     
 </section>
@@ -174,7 +96,7 @@
 
 <section class="works">
     <div class="work-title">
-    <h2 class="heading">My Recent <br>Work<br></h2>
+    <h2 class="heading">My Recent Work</h2>
     </div>
     
     <div class="divider3">
