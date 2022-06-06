@@ -8,9 +8,9 @@
 
 - Major languages: HTML and CSS
 
-## Live Demo (if available)
+## Live Demo
 
-![Image](absolute link)
+![Image](https://krisbobo.github.io/Portfolio-mobileVersionSkeleton/)
 
 ## Getting Started
 
