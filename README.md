@@ -2,7 +2,7 @@
 
 # Portfolio setup and mobile version skeleton
 
-> In this project I built the various sections of my desktop version portfolio.
+> In this project I built the various sections of my portfolio.
 
 ## Built With
 
