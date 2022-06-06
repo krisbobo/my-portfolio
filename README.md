@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-![Image](https://krisbobo.github.io/Portfolio-mobileVersionSkeleton/)
+![Live Demo](https://krisbobo.github.io/Portfolio-mobileVersionSkeleton/)
 
 ## Getting Started
 
