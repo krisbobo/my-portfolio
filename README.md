@@ -2,15 +2,15 @@
 
 # Portfolio setup and mobile version skeleton
 
-> In this project I built the various sections of my desktop version portfolio.
+> In this project I built the various sections of my portfolio.
 
 ## Built With
 
 - Major languages: HTML and CSS
 
-## Live Demo (if available)
+## Live Demo
 
-![Image](absolute link)
+- Live demo link: [Portfolio](https://krisbobo.github.io/Portfolio-mobileVersionSkeleton/)
 
 ## Getting Started
 
