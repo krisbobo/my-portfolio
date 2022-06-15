@@ -50,6 +50,14 @@ nav {
   overflow: hidden;
 }
 
+.open {
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
 .nav-menu li {
   padding: 18px 0;
 }
