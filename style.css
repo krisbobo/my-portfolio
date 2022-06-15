@@ -50,8 +50,8 @@ nav {
   overflow: hidden;
 }
 
-nav .nav-menu li {
-  padding: 18px 0px;
+.nav-menu li {
+  padding: 18px 0;
 }
 
 .nav-menu .desktop-nav {
@@ -61,7 +61,7 @@ nav .nav-menu li {
   font-size: 24px;
   line-height: 32px;
   align-items: center;
-  color: #EDECFF;
+  color: #edecff;
 }
 
 .mail {
@@ -504,7 +504,7 @@ h4 {
 
   nav {
     width: 15rem;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     overflow: visible;
     height: auto;
   }
@@ -523,7 +523,7 @@ h4 {
     line-height: 20px;
     position: relative;
   }
-  
+
   .mail {
     display: inline-block;
   }
