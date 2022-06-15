@@ -505,6 +505,7 @@ h4 {
   nav {
     width: 15rem;
     margin-bottom: 0px;
+    overflow: visible;
   }
 
   .nav-menu {
