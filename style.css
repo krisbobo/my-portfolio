@@ -4,7 +4,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #191765;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(./images/left.png);
   background-repeat: no-repeat;
   background-position-x: left;
@@ -16,19 +17,17 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  background: #191765;
+}
+
 ul {
   list-style-type: none;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.nav-menu {
-  position: absolute;
-  display: none;
+.container {
+  padding: 15px;
+  margin-left: 15px;
 }
 
 #logo {
@@ -40,19 +39,33 @@ ul {
   letter-spacing: 0.03em;
 }
 
-header nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  position: relative;
-  bottom: 40px;
-  margin-top: 40px;
+.nav-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 20px;
 }
 
-header {
-  height: 50px;
-  width: 100%;
+nav {
+  height: 0;
+  overflow: hidden;
+}
+
+nav .nav-menu li {
+  padding: 18px 0px;
+}
+
+.nav-menu .desktop-nav {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  align-items: center;
+  color: #EDECFF;
+}
+
+.mail {
+  display: none;
 }
 
 #greeting {
@@ -444,12 +457,21 @@ h4 {
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: auto;
+    background-image: url(./images/leftcircle.png), url(./images/rightcircle.png);
+    background-repeat: no-repeat;
+    background-position: 0% 3%, 100% 11%;
+  }
+
   header {
     display: flex;
     justify-content: center;
   }
 
-  .nav-bar > div {
+  .container > div {
     animation-duration: 2s;
     animation-name: logo-turn;
   }
@@ -466,16 +488,23 @@ h4 {
     }
   }
 
-  #menu {
-    position: absolute;
-    display: none;
-  }
-
-  .nav-bar {
+  .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 50px;
     padding: 20px;
     width: 85%;
+    margin: 0 auto;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  nav {
+    width: 15rem;
+    margin-bottom: 0px;
   }
 
   .nav-menu {
@@ -484,13 +513,17 @@ h4 {
     margin: 0;
   }
 
-  .nav-menu a {
+  .nav-menu .desktop-nav {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     position: relative;
+  }
+  
+  .mail {
+    display: inline-block;
   }
 
   /* nav-menu animations */
@@ -519,15 +552,6 @@ h4 {
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
-  }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    margin: auto;
-    background-image: url(./images/leftcircle.png), url(./images/rightcircle.png);
-    background-repeat: no-repeat;
-    background-position: 0% 3%, 100% 11%;
   }
 
   .headline {
