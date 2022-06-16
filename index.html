@@ -11,17 +11,15 @@
 <body>
 
     <header>
-        <div class="container">
-            
+        <div class="container">       
             <div>
                 <a id="logo" href="#">John Doe</a>
                 <div class="nav-toggle" id="navToggle">
-                    <img id="hamburger" class="navIcon" src="./images/Union.png" alt="Website hamburger menu">
-                    <img class="navIcon hidden" src="./images/closeIcon.png" alt="Close hamburger menu">
+                    <img id="hamburger" class="navIcon" src="./images/Union.png" alt="Website hamburger menu">     
                 </div>
             </div>
         
-            <nav>
+            <nav class="desktop">
                 <ul class="nav-menu">
                     <li><a class="desktop-nav" href="#">Portfolio</a></li>
                     <li><a class="desktop-nav" href="#">About</a></li>
@@ -29,6 +27,15 @@
                     <li><a class="desktop-nav mail" href="#"><img src="./images/mailbox.png" alt="Mail Icon"></a></li>
                 </ul>
             </nav>
+            <nav class="mobile-nav-hidden">
+                <img id="closeHamburger" class="navIcon hidden" src="./images/closeIcon.png" alt="Close hamburger menu">
+                <ul class="mobile-nav-menu">
+                    <li class="mobile-li"><a class="mobile-nav" href="#">Portfolio</a> <span> > </span></li>
+                    <li class="mobile-li"><a class="mobile-nav" href="#">About</a> <span> > </span></li>
+                    <li class="mobile-li"><a class="mobile-nav" href="#">Contact</a><span> > </span></li>
+                </ul>
+            </nav> 
+
         </div>
     </header>
 
