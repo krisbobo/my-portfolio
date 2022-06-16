@@ -41,35 +41,36 @@ ul {
   right: 20px;
 }
 
-nav {
+.mobile-nav-hidden {
+  display: block;
   height: 0;
   overflow: hidden;
 }
 
 .header {
   padding-left: 30px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   overflow: visible;
   width: 100%;
   background: #191765;
+  z-index: 900;
 }
 
 .hidden {
   display: none;
+  position: absolute;
+  top: 1rem;
+  right: 20px;
 }
 
-.d-block {
-  display: block;
-}
-
-.nav-menu li {
+.mobile-nav-menu li {
   padding: 18px 0;
 }
 
-.nav-menu .desktop-nav {
+.mobile-nav-menu .mobile-nav {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -77,9 +78,10 @@ nav {
   line-height: 32px;
   align-items: center;
   color: #edecff;
+  height: 100vh;
 }
 
-.mail {
+.desktop {
   display: none;
 }
 
@@ -519,11 +521,12 @@ h4 {
     display: none;
   }
 
-  nav {
+  .desktop {
+    display: block;
     width: 15rem;
     margin-bottom: 0;
     overflow: visible;
-    height: auto;
+    height: 25px;
   }
 
   .nav-menu {
@@ -543,6 +546,10 @@ h4 {
 
   .mail {
     display: inline-block;
+  }
+
+  .mobile-nav-hidden {
+    display: none;
   }
 
   /* nav-menu animations */
