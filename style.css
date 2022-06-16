@@ -46,12 +46,23 @@ nav {
   overflow: hidden;
 }
 
-.open {
-  height: 100vh;
+.header {
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: visible;
+  width: 100%;
+  background: #191765;
 }
 
 .hidden {
   display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 .nav-menu li {
@@ -386,13 +397,13 @@ h4 {
   color: #f5f5ff;
 }
 
-.contact-description h1 {
+.contact-description h2 {
   margin-bottom: 0;
   font-size: 32px;
   font-weight: 500;
 }
 
-.contact-description h2 {
+.contact-description h3 {
   display: none;
 }
 
@@ -473,6 +484,8 @@ h4 {
   header {
     display: flex;
     justify-content: center;
+    position: static;
+    height: 0;
   }
 
   .container > div {
@@ -830,7 +843,7 @@ h4 {
     margin-top: 150px;
   }
 
-  .contact-description h1 {
+  .contact-description .mobile {
     display: none;
   }
 
