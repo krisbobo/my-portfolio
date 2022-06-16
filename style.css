@@ -62,8 +62,12 @@ ul {
 .hidden {
   display: none;
   position: absolute;
-  top: 1rem;
-  right: 20px;
+  top: 62px;
+  right: 38px;
+}
+
+.open {
+  display: block;
 }
 
 .mobile-nav-menu li {
@@ -78,7 +82,6 @@ ul {
   line-height: 32px;
   align-items: center;
   color: #edecff;
-  height: 100vh;
 }
 
 .desktop {
