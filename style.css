@@ -58,7 +58,7 @@ ul {
   background: #191765;
   background-image: url(./images/mobile-menu-left.png), url(./images/mobile-menu-right.png);
   background-repeat: no-repeat;
-  background-position: left 40%, right 95%;
+  background-position: left 40%, right 100%;
   background-size: 45% 60%, 40% 60%;
   z-index: 900;
 }
@@ -76,6 +76,17 @@ ul {
 
 .mobile-nav-menu li {
   padding: 18px 0;
+}
+
+.mobile-nav-menu {
+  margin-top: 25%;
+}
+
+.mobile-li {
+  display:flex;
+  justify-content: space-between;
+  margin: auto 55px;
+  align-items: center;
 }
 
 .mobile-nav-menu .mobile-nav {
