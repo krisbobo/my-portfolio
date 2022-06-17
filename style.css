@@ -56,6 +56,10 @@ ul {
   overflow: visible;
   width: 100%;
   background: #191765;
+  background-image: url(./images/mobile-menu-left.png), url(./images/mobile-menu-right.png);
+  background-repeat: no-repeat;
+  background-position: left 40%, right 95%;
+  background-size: 45% 60%, 40% 60%;
   z-index: 900;
 }
 
