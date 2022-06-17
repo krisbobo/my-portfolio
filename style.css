@@ -49,6 +49,7 @@ header {
   position: absolute;
   top: 1rem;
   right: 20px;
+  cursor: pointer;
 }
 
 .mobile-nav-hidden {
@@ -82,6 +83,7 @@ header {
 
 .open {
   display: block;
+  cursor: pointer;
 }
 
 .mobile-nav-menu li {
@@ -163,6 +165,15 @@ header {
   width: 100%;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #9490FF;
+}
+
 #frame {
   width: 41%;
   margin-top: 15px;
@@ -192,7 +203,7 @@ header {
   color: #9490ff;
 }
 
-.language-items {
+.language-items li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -203,7 +214,7 @@ header {
   color: #f5f5ff;
 }
 
-.framework-items {
+.framework-items li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -214,7 +225,7 @@ header {
   color: #f5f5ff;
 }
 
-.skill-items {
+.skill-items li {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -719,6 +730,14 @@ header {
     position: static;
     margin-left: 10px;
   }
+  
+  h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    align-items: center;
+    color: #9390FF;
+  }
 
   .about > * {
     flex: 1;
@@ -744,21 +763,21 @@ header {
     color: #9490ff;
   }
 
-  .language-items {
+  .language-items li {
     color: #fff;
     font-weight: 400;
     font-size: 13.1389px;
     line-height: 25px;
   }
 
-  .framework-items {
+  .framework-items li {
     font-weight: 400;
     color: #fff;
     font-size: 14.1935px;
     line-height: 28px;
   }
 
-  .skill-items {
+  .skill-items li {
     color: #fff;
     font-weight: 400;
     font-size: 14.6667px;
