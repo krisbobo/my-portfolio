@@ -180,7 +180,7 @@ header {
   margin: 0 0 0 30px;
 }
 
-h4 {
+.headline-headers {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -734,7 +734,7 @@ h4 {
     margin-top: 15px;
   }
 
-  h4 {
+  .headline-headers {
     font-weight: 700;
     font-size: 18px;
     line-height: 29px;
