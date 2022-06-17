@@ -171,7 +171,7 @@ h4 {
   line-height: 24px;
   align-items: center;
   letter-spacing: 0.03em;
-  color: #9490FF;
+  color: #9490ff;
 }
 
 #frame {
@@ -730,13 +730,13 @@ h4 {
     position: static;
     margin-left: 10px;
   }
-  
+
   h4 {
     font-weight: 700;
     font-size: 18px;
     line-height: 29px;
     align-items: center;
-    color: #9390FF;
+    color: #9390ff;
   }
 
   .about > * {
