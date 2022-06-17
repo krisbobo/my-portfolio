@@ -52,6 +52,12 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 - Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
 - LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
+👤 **Chimwemwe Mkandawire**
+
+- GitHub: [chimwemwe007](https://github.com/chimwemwe007)
+- Twitter: [CHxMZ](https://twitter.com/CHxMZ)
+- LinkedIn: [chimwemwe MKandawire](https://linkedin.com/in/Chimwemwe-Mkandawire)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
