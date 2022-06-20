@@ -52,11 +52,11 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 - Twitter: [ChrisboboSys](https://twitter.com/ChrisboboSys)
 - LinkedIn: [kiyong-christian](https://linkedin.com/in/kiyong-christian)
 
-👤 **Chimwemwe Mkandawire**
+👤 **Esther Udondian**
 
-- GitHub: [chimwemwe007](https://github.com/chimwemwe007)
-- Twitter: [CHxMZ](https://twitter.com/CHxMZ)
-- LinkedIn: [chimwemwe MKandawire](https://linkedin.com/in/Chimwemwe-Mkandawire)
+- GitHub: [chimwemwe007](https://github.com/eudondian)
+- Twitter: [CHxMZ](https://twitter.com/eudondian)
+- LinkedIn: [chimwemwe MKandawire](https://www.linkedin.com/in/esther-udondian-186849119/)
 
 ## 🤝 Contributing
 
