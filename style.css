@@ -44,17 +44,20 @@ header {
   color: #fff;
   letter-spacing: 0.03em;
 }
+
 .nav-toggle {
   position: absolute;
   top: 1rem;
   right: 20px;
   cursor: pointer;
 }
+
 .mobile-nav-hidden {
   display: block;
   height: 0;
   overflow: hidden;
 }
+
 .header {
   padding-left: 5px;
   position: fixed;
@@ -70,28 +73,34 @@ header {
   background-size: 45% 60%, 40% 60%;
   z-index: 900;
 }
+
 .hidden {
   display: none;
   position: absolute;
   top: 62px;
   right: 38px;
 }
+
 .open {
   display: block;
   cursor: pointer;
 }
+
 .mobile-nav-menu li {
   padding: 18px 0;
 }
+
 .mobile-nav-menu {
   margin-top: 25%;
 }
+
 .mobile-li {
   display: flex;
   justify-content: space-between;
   margin: auto 55px;
   align-items: center;
 }
+
 .mobile-nav-menu .mobile-nav {
   text-decoration: none;
   font-style: normal;
@@ -99,9 +108,8 @@ header {
   font-size: 24px;
   line-height: 32px;
   align-items: center;
-  color: #EDECFF;
+  color: #edecff;
 }
-
 
 .desktop {
   display: none;
