@@ -39,7 +39,7 @@ function inputCheck() {
   const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str); if (!isLowerCase(userEmail)) {
     // show error
     // add error class
-    errorHolder.innerText = 'Invalid Email! Emails must be written with lowercase characters.';
+    errorHolder.innerText = 'Invalid Email! Email should be written in lowercase.';
   }
 }
 form.addEventListener('submit', (e) => {
