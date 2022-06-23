@@ -510,6 +510,14 @@ h4 {
   margin: 0 0 40px 0;
 }
 
+.error {
+  color: red;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
