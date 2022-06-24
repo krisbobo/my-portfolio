@@ -38,10 +38,12 @@ function inputCheck() {
   const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
   if (!isLowerCase(userEmail)) {
     errorHolder.innerText = 'Invalid Email! Email should be written in lowercase.';
-} else {
-    form.sumbit();
+  }
+  if (isLowerCase(userEmail)) {
+    form.submit();
   }
 }
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   inputCheck();
