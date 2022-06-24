@@ -54,3 +54,12 @@ form.addEventListener('submit', (e) => {
 const formName = document.querySelector('#name');
 const formEmail = document.querySelector('#mail');
 const formMessage = document.querySelector('#message');
+
+function update_change() {
+  const data_from_form = {
+    user_name: formName.value,
+    user_email:  formEmail.value,
+    user_message: formMessage.value,
+  };
+  localStorage.setItem('form', JSON.stringify(data_from_form));
+}
