@@ -26,3 +26,25 @@ window.addEventListener('resize', () => {
     hamburger.classList.remove('hidden');
   }
 });
+
+// form validation
+
+const form = document.querySelector('.contact-form');
+const email = document.querySelector('#mail');
+const errorHolder = document.querySelector('.error');
+
+function inputCheck() {
+  const userEmail = email.value.trim();
+  const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+  if (!isLowerCase(userEmail)) {
+    errorHolder.innerText = 'Invalid Email! Email should be written in lowercase.';
+  }
+  if (isLowerCase(userEmail)) {
+    form.submit();
+  }
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  inputCheck();
+});
