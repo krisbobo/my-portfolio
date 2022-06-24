@@ -34,12 +34,12 @@ const email = document.querySelector('#mail');
 const errorHolder = document.querySelector('.error');
 
 function inputCheck() {
-  // Get the values from the inputs
   const userEmail = email.value.trim();
-  const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str); if (!isLowerCase(userEmail)) {
-    // show error
-    // add error class
+  const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+  if (!isLowerCase(userEmail)) {
     errorHolder.innerText = 'Invalid Email! Email should be written in lowercase.';
+} else {
+    form.sumbit();
   }
 }
 form.addEventListener('submit', (e) => {
