@@ -6,7 +6,7 @@
 
 ## Built With
 
-- Major languages: HTML and CSS
+- Major languages: HTML, CSS and JavaScript.
 
 ## Live Demo
 
@@ -54,9 +54,9 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 
 👤 **Esther Udondian**
 
-- GitHub: [chimwemwe007](https://github.com/eudondian)
-- Twitter: [CHxMZ](https://twitter.com/eudondian)
-- LinkedIn: [chimwemwe MKandawire](https://www.linkedin.com/in/esther-udondian-186849119/)
+- GitHub: [eudondian](https://github.com/eudondian)
+- Twitter: [eudondian](https://twitter.com/eudondian)
+- LinkedIn: [esther-udondian](https://www.linkedin.com/in/esther-udondian-186849119/)
 
 ## 🤝 Contributing
 

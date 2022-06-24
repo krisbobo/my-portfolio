@@ -48,3 +48,31 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   inputCheck();
 });
+
+// Local Storage
+
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#mail');
+const formMessage = document.querySelector('#message');
+
+function updateChange() {
+  const datafromForm = {
+    user_name: formName.value,
+    user_email: formEmail.value,
+    user_message: formMessage.value,
+  };
+  localStorage.setItem('form', JSON.stringify(datafromForm));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getformValue = localStorage.getItem('form');
+  if (getformValue) {
+    const formObject = JSON.parse(getformValue);
+    formName.value = formObject.user_name;
+    formEmail.vaule = formObject.user_email;
+    formMessage.value = formObject.user_message;
+  }
+});
+formName.onchange = updateChange;
+formEmail.onchange = updateChange;
+formMessage.onchange = updateChange;
