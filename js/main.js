@@ -48,3 +48,9 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   inputCheck();
 });
+
+// Local Storage
+
+const formName = document.querySelector('#name');
+const formEmail = document.querySelector('#mail');
+const formMessage = document.querySelector('#message');
