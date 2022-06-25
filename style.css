@@ -518,6 +518,117 @@ h4 {
   text-align: center;
 }
 
+/* Modal Pop-up */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 63px;
+  left: 0;
+  width: 97%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid #aaa;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  margin-left: 5px;
+}
+
+.modal-content {
+  margin: 0% auto;
+  padding: 15px;
+  width: 100%;
+}
+
+.someHeader {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.desktopModal {
+  display: none;
+}
+
+.mobileModal {
+  width: 100%;
+  height: 100%;
+}
+
+.someText {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.devLanguages li {
+  padding: 10px 15px;
+  display: table-cell;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  border-left: 1px solid #555;
+}
+
+.modalButtons {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 48px;
+  gap: 5px;
+}
+
+.modalButtons div {
+  background: #7d73fc;
+  align-content: center;
+  border: 0;
+  margin-left: 90px;
+}
+
+.modalButtons div a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Desktop version */
 
 @media only screen and (min-width: 768px) {
@@ -942,5 +1053,75 @@ h4 {
     padding: 0 20px;
     width: 240px;
     border-top: none;
+  }
+
+  /* Modal Content/Box */
+  .modal {
+    display: none;
+    position: fixed;
+    width: 98%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid #aaa;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    margin-left: 10px;
+  }
+
+  .modal-content {
+    margin: 5% auto;
+    padding: 20px;
+    width: 95%;
+  }
+
+  .someHeader {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktopModal {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobileModal {
+    display: none;
+  }
+
+  .someText {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .devLanguages li {
+    padding: 10px 15px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    border-left: 1px solid #555;
+  }
+
+  .modalButtons {
+    display: inline-block;
+    margin-left: 390px;
   }
 }
