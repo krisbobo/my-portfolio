@@ -119,7 +119,7 @@ const projectSection = [
 ];
 
 const worksContainer = document.querySelector('#porto');
-projectSection.forEach((work) => {
+projectSection.forEach((work, i) => {
   const workCards = document.createElement('div');
   workCards.classList.add('workCards');
   workCards.innerHTML = `  
@@ -139,11 +139,34 @@ projectSection.forEach((work) => {
                     <li>${work.langBox.Bootstrap}</li>
                     <li class="border-check">${work.langBox.Ruby}</li>
                 </ul>
-                <div class="work-button"><button type="button" >${work.button}</button></div> 
+                <div class="work-button"><button class="card-btn" type="button" data-work="${i}">${work.button}</button></div> 
+
             </div>
         </div>
     </div>
   `;
 
   worksContainer.appendChild(workCards);
+});
+
+// ******* Modal Popup*******
+
+const modal = document.getElementsByClassName('modal');
+const span = document.getElementsByClassName('close')[0];
+
+span.addEventListener('click', () => {
+  document.getElementsByClassName('modal')[0].style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+const workCardBtns = document.querySelectorAll('.card-btn');
+workCardBtns.forEach((cardBtn) => {
+  cardBtn.addEventListener('click', () => {
+    document.querySelector('.modal').style.display = 'block';
+  });
 });
