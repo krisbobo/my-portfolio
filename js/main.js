@@ -77,11 +77,10 @@ formName.onchange = updateChange;
 formEmail.onchange = updateChange;
 formMessage.onchange = updateChange;
 
-// Create data object
+// *******Create data object*******
 
 const projectSection = [
   {
-    heading: 'My Recent Work',
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -118,3 +117,33 @@ const projectSection = [
     button: 'See Project',
   },
 ];
+
+const worksContainer = document.querySelector('#porto');
+projectSection.forEach((work) => {
+  const workCards = document.createElement('div');
+  workCards.classList.add('workCards');
+  workCards.innerHTML = `  
+    <div class="grid-container">
+        <div class="work-1 work">
+
+            <div class="col-1">
+                <img src=${work.img} alt="Image placeholder">
+            </div>
+
+            <div class="col-2">
+                <h3 class="title">${work.title}</h3>
+                <p class="supporting-text">${work.supportingText}</p>
+                <ul class="lang-box">
+                    <li>${work.langBox.css}</li>
+                    <li>${work.langBox.html}</li>
+                    <li>${work.langBox.Bootstrap}</li>
+                    <li class="border-check">${work.langBox.Ruby}</li>
+                </ul>
+                <div class="work-button"><button type="button" >${work.button}</button></div> 
+            </div>
+        </div>
+    </div>
+  `;
+
+  worksContainer.appendChild(workCards);
+});
