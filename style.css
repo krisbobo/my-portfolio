@@ -71,7 +71,7 @@ header {
   background-repeat: no-repeat;
   background-position: left 40%, right 100%;
   background-size: 45% 60%, 40% 60%;
-  z-index: 900;
+  z-index: 10;
 }
 
 .hidden {
@@ -528,7 +528,7 @@ h4 {
   width: 97%;
   height: 100%;
   overflow: auto;
-  background: rgba(255, 255, 255, 0.16);
+  background: #191765;
   border: 1px solid #aaa;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   margin-left: 5px;
@@ -1062,7 +1062,7 @@ h4 {
     width: 98%;
     height: 100%;
     overflow: auto;
-    background: rgba(255, 255, 255, 0.16);
+    background: #191765;
     border: 1px solid #aaa;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     margin-left: 10px;
