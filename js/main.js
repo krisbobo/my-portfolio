@@ -76,3 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
 formName.onchange = updateChange;
 formEmail.onchange = updateChange;
 formMessage.onchange = updateChange;
+
+// Create data object
+
+const projectSection = [
+  {
+    heading: 'My Recent Work',
+    img: './images/imageplaceholder.png',
+    title: 'Multi-Post Stories',
+    supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    langBox: {
+      css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
+    },
+    button: 'See Project',
+  },
+];
