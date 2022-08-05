@@ -119,7 +119,7 @@ header {
   max-width: 100%;
   overflow: hidden;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 #greeting {
@@ -518,6 +518,7 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin: 15% auto;
 }
 
 .desktopModal {
@@ -536,6 +537,10 @@ h4 {
   line-height: 24px;
   text-align: center;
   color: #fff;
+}
+
+.devLanguages {
+  margin: 10% auto;
 }
 
 .devLanguages ul {
@@ -558,7 +563,7 @@ h4 {
 .modalButtons {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 .modalButtons div {
@@ -1023,6 +1028,7 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin: 0;
   }
 
   .desktopModal {
@@ -1045,11 +1051,15 @@ h4 {
     color: #fff;
   }
 
+  .devLanguages {
+    margin: 0;
+  }
+
   .devLanguages ul {
     padding: 10px 15px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
