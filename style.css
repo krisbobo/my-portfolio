@@ -484,7 +484,7 @@ h4 {
 /* Modal Pop-up */
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 1%;
@@ -499,7 +499,7 @@ h4 {
   padding-top: 5%;
 }
 
-.modal-content {
+.content {
   margin: 10% auto;
   width: 90%;
   padding-top: 7%;
@@ -626,7 +626,6 @@ h4 {
     right: 0;
     background: rgba(25, 23, 101, 0.16);
     z-index: 14;
-    height: 9%;
   }
 
   .container > div {
@@ -654,6 +653,7 @@ h4 {
     padding: 20px;
     width: 84%;
     margin: 0 auto;
+    backdrop-filter: blur(4px);
   }
 
   .nav-toggle {
@@ -905,6 +905,10 @@ h4 {
     align-items: center;
   }
 
+  .work:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   .col-1 {
     flex: 3;
   }
@@ -923,7 +927,6 @@ h4 {
 
   .col-2 {
     flex: 2;
-    margin-top: 3%;
   }
 
   .title {
@@ -994,7 +997,7 @@ h4 {
 
   /* Modal Content/Box */
   .modal {
-    display: block;
+    display: none;
     position: fixed;
     width: 83%;
     height: 93%;
@@ -1008,7 +1011,7 @@ h4 {
     padding: 0;
   }
 
-  .modal-content {
+  .content {
     margin: 0 auto;
     padding: 2%;
     width: 65%;
