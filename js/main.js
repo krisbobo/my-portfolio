@@ -81,6 +81,7 @@ formMessage.onchange = updateChange;
 
 const projectSection = [
   {
+    id: 1,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -88,8 +89,11 @@ const projectSection = [
       css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
+    seeLive: 'https://krisbobo.github.io/my-portfolio/',
+    seeSource: 'https://github.com/krisbobo/my-portfolio',
   },
   {
+    id: 2,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -97,8 +101,11 @@ const projectSection = [
       css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
+    seeLive: 'https://krisbobo.github.io/my-portfolio/',
+    seeSource: 'https://github.com/krisbobo/my-portfolio',
   },
   {
+    id: 3,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -106,8 +113,11 @@ const projectSection = [
       css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
+    seeLive: 'https://krisbobo.github.io/my-portfolio/',
+    seeSource: 'https://github.com/krisbobo/my-portfolio',
   },
   {
+    id: 4,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -115,6 +125,8 @@ const projectSection = [
       css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
+    seeLive: 'https://krisbobo.github.io/my-portfolio/',
+    seeSource: 'https://github.com/krisbobo/my-portfolio',
   },
 ];
 
@@ -123,9 +135,7 @@ projectSection.forEach((work, i) => {
   const workCards = document.createElement('div');
   workCards.classList.add('workCards');
   workCards.innerHTML = `  
-    <div class="grid-container">
         <div class="work-1 work">
-
             <div class="col-1">
                 <img src=${work.img} alt="Image placeholder">
             </div>
@@ -139,11 +149,9 @@ projectSection.forEach((work, i) => {
                     <li>${work.langBox.Bootstrap}</li>
                     <li class="border-check">${work.langBox.Ruby}</li>
                 </ul>
-                <div class="work-button"><button class="card-btn" type="button" data-work="${i}">${work.button}</button></div> 
-
+                <div class="work-button"><button class="card-btn" type="button" data-work="${i}">${work.button}</button></div>
             </div>
         </div>
-    </div>
   `;
 
   worksContainer.appendChild(workCards);
@@ -151,22 +159,65 @@ projectSection.forEach((work, i) => {
 
 // ******* Modal Popup*******
 
-const modal = document.getElementsByClassName('modal');
+const modal = document.querySelector('myModal');
 const span = document.getElementsByClassName('close')[0];
 
-span.addEventListener('click', () => {
-  document.getElementsByClassName('modal')[0].style.display = 'none';
-});
-
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.style.display = 'none';
-  }
-});
-
-const workCardBtns = document.querySelectorAll('.card-btn');
-workCardBtns.forEach((cardBtn) => {
-  cardBtn.addEventListener('click', () => {
-    document.querySelector('.modal').style.display = 'block';
+function pop(event) {
+  const clickBtn = event.target.getAttribute('id');
+  let currentWork = '';
+  projectSection.forEach((e) => {
+    if (clickBtn === e.id) currentWork = e;
   });
+
+  const content = document.createElement('div');
+  content.classList.add('content');
+  content.innerHTML = `
+        <div class="modal-header">
+          <span class="close">&times;</span>
+
+          <h2 id="modal-title" class="someHeader">${currentWork.title}</h2>
+        </div>
+        <div class="modal-body">
+          <img class="mobileModal" src="./images/mobilemodal.png" alt="My Project">
+          <img class="desktopModal" src="./images/desktopmodal.png" alt="My Project">
+          <p class="someText">${currentWork.supportingText}</p>
+        </div>
+        <div class="modal-footer">
+          <div class="devLanguages">
+            <ul>
+                <l>CSS</li>
+                <li>HTML</li>
+                <li>Bootstrap</li>
+                <li>Ruby</li>
+            </ul>
+          </div>
+          <div class="modalButtons">
+            <div class="liveDemo"><a href="${currentWork.seeLive}">See Live</a><img src="./images/modalIcon.png" alt="See Live Icon"></div>
+            <div class="sourcecode"><a href="${currentWork.seeSource}">See Source</a><img src="./images/github.png" alt="github image"></div>
+          </div>
+        </div>
+  `;
+
+  modal.append(content);
+
+  span.addEventListener('click', () => {
+    document.getElementsByClassName('modal')[0].style.display = 'none';
+  });
+
+  document.querySelectorAll('.liveDemo').forEach((e) => {
+    e.addEventListener('click', () => {
+      window.open(currentWork.projectSection.seeLive);
+    });
+  });
+
+  document.querySelectorAll('.sourceCode').forEach((e) => {
+    e.addEventListener('click', () => {
+      window.open(currentWork.projectSection.seeSource);
+    });
+  });
+}
+
+const clickAction = document.querySelectorAll('.card-btn');
+clickAction.forEach((e) => {
+  e.addEventListener('click', pop);
 });
