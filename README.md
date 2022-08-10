@@ -34,7 +34,7 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 
 >                   git clone (https/ssh)URL
 
--Navigate into the cloned folder or repository by running the command:
+- Navigate into the cloned folder or repository by running the command:
 
 >                   cd <folder/name of the repository>
 
