@@ -614,7 +614,7 @@ h4 {
     margin: auto;
     background-image: url(./images/leftcircle.png), url(./images/rightcircle.png);
     background-repeat: no-repeat;
-    background-position: 2% 5%, 98% 15%;
+    background-position: 2% 5%, 98% 13%;
   }
 
   header {
@@ -649,7 +649,6 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
     padding: 20px;
     width: 84%;
     margin: 0 auto;
@@ -720,7 +719,7 @@ h4 {
   }
 
   .headline {
-    padding: 5px 20%;
+    padding: 5px 5%;
   }
 
   .headline > h1 {
@@ -758,7 +757,7 @@ h4 {
     line-height: 105px;
     text-align: center;
     color: #9391ff;
-    margin: 20% auto;
+    margin: 15% auto;
     margin-bottom: 5px;
   }
 
@@ -775,7 +774,7 @@ h4 {
     align-items: center;
     justify-content: center;
     margin: 50px auto;
-    padding: 20px 10%;
+    padding: 0 10%;
   }
 
   .width-reduction {
@@ -876,8 +875,8 @@ h4 {
     background-image: url(./images/desktop1.png), url(./images/desktop2.png), url(./images/desktop3.png), url(./images/desktop4.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position-x: left, right, left, right;
-    background-position-y: 18%, 50%, 72%, 85%;
-    padding: 3% 8%;
+    background-position-y: 18%, 50%, 72%, 88%;
+    padding: 3% 5%;
   }
 
   .heading {
@@ -954,7 +953,7 @@ h4 {
 
   .lang-box li {
     padding: 10px 20px;
-    width: 20%;
+    width: 30%;
   }
 
   .contact-section {
@@ -977,7 +976,7 @@ h4 {
   }
 
   .contact-width {
-    width: 40%;
+    width: 50%;
   }
 
   .form-button {
