@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (getformValue) {
     const formObject = JSON.parse(getformValue);
     formName.value = formObject.user_name;
-    formEmail.vaule = formObject.user_email;
+    formEmail.value = formObject.user_email;
     formMessage.value = formObject.user_message;
   }
 });
@@ -81,12 +81,28 @@ formMessage.onchange = updateChange;
 
 const projectSection = [
   {
+    id: 0,
+    img: './images/imageplaceholder.png',
+    title: 'Multi-Post Stories',
+    mobileImg: './images/mobilemodal.png',
+    desktopImg: './images/desktopmodal.png',
+    supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    langBox: {
+      css: 'CSS', html: 'HTML', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
+    },
+    button: 'See Project',
+    seeLive: 'https://krisbobo.github.io/my-portfolio/',
+    seeSource: 'https://github.com/krisbobo/my-portfolio',
+  },
+  {
     id: 1,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
+    mobileImg: './images/mobilemodal.png',
+    desktopImg: './images/desktopmodal.png',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     langBox: {
-      css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
+      css: 'CSS', html: 'HTML', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
     seeLive: 'https://krisbobo.github.io/my-portfolio/',
@@ -96,9 +112,11 @@ const projectSection = [
     id: 2,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
+    mobileImg: './images/mobilemodal.png',
+    desktopImg: './images/desktopmodal.png',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     langBox: {
-      css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
+      css: 'CSS', html: 'HTML', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
     seeLive: 'https://krisbobo.github.io/my-portfolio/',
@@ -108,21 +126,11 @@ const projectSection = [
     id: 3,
     img: './images/imageplaceholder.png',
     title: 'Multi-Post Stories',
+    mobileImg: './images/mobilemodal.png',
+    desktopImg: './images/desktopmodal.png',
     supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     langBox: {
-      css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
-    },
-    button: 'See Project',
-    seeLive: 'https://krisbobo.github.io/my-portfolio/',
-    seeSource: 'https://github.com/krisbobo/my-portfolio',
-  },
-  {
-    id: 4,
-    img: './images/imageplaceholder.png',
-    title: 'Multi-Post Stories',
-    supportingText: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    langBox: {
-      css: 'css', html: 'html', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
+      css: 'CSS', html: 'HTML', Bootstrap: 'Bootstrap', Ruby: 'Ruby',
     },
     button: 'See Project',
     seeLive: 'https://krisbobo.github.io/my-portfolio/',
@@ -130,12 +138,45 @@ const projectSection = [
   },
 ];
 
-const worksContainer = document.querySelector('#porto');
-projectSection.forEach((work, i) => {
+// ========= Modal Popup ===========
+
+const popUp = (index) => `
+        <div class="modal">
+          <div class="content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+    
+              <h2 id="modal-title" class="someHeader">${projectSection[index].title}</h2>
+            </div>
+            <div class="modal-body">
+              <img class="mobileModal" src=${projectSection[index].mobileImg} alt="My Project">
+              <img class="desktopModal" src=${projectSection[index].desktopImg} alt="My Project">
+              <p class="someText">${projectSection[index].supportingText}</p>
+            </div>
+            <div class="modal-footer">
+              <div class="devLanguages">
+                <ul>
+                    <li>${projectSection[index].langBox.html}</li>
+                    <li>${projectSection[index].langBox.css}</li>
+                    <li>${projectSection[index].langBox.Ruby}</li>
+                    <li>${projectSection[index].langBox.Bootstrap}</li>
+                </ul>
+              </div>
+              <div class="modalButtons">
+                <div class="liveDemo"><a href="${projectSection[index].seeLive}">See Live</a><img src="./images/modalIcon.png" alt="See Live Icon"></div>
+                <div class="sourcecode"><a href="${projectSection[index].seeSource}">See Source</a><img src="./images/github.png" alt="github image"></div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+
+// ======= Inject work section dynamically ==========
+
+const worksContainer = document.querySelector('.work-container');
+projectSection.forEach((work, index) => {
   const workCards = document.createElement('div');
   workCards.classList.add('workCards');
   workCards.innerHTML = `  
-        <div class="work-1 work">
             <div class="col-1">
                 <img src=${work.img} alt="Image placeholder">
             </div>
@@ -149,75 +190,22 @@ projectSection.forEach((work, i) => {
                     <li>${work.langBox.Bootstrap}</li>
                     <li class="border-check">${work.langBox.Ruby}</li>
                 </ul>
-                <div class="work-button"><button class="card-btn" type="button" data-work="${i}">${work.button}</button></div>
+                <div class="work-button"><button data-id="${index}" class="card-btn" type="button">${work.button}</button></div>
             </div>
-        </div>
   `;
 
   worksContainer.appendChild(workCards);
 });
 
-// ******* Modal Popup*******
+const workBtn = document.querySelectorAll('.card-btn');
+// const span = document.getElementsByClassName('close')[0];
 
-const modal = document.querySelector('myModal');
-const span = document.getElementsByClassName('close')[0];
-
-function pop(event) {
-  const clickBtn = event.target.getAttribute('id');
-  let currentWork = '';
-  projectSection.forEach((e) => {
-    if (clickBtn === e.id) currentWork = e;
-  });
-
-  const content = document.createElement('div');
-  content.classList.add('content');
-  content.innerHTML = `
-        <div class="modal-header">
-          <span class="close">&times;</span>
-
-          <h2 id="modal-title" class="someHeader">${currentWork.title}</h2>
-        </div>
-        <div class="modal-body">
-          <img class="mobileModal" src="./images/mobilemodal.png" alt="My Project">
-          <img class="desktopModal" src="./images/desktopmodal.png" alt="My Project">
-          <p class="someText">${currentWork.supportingText}</p>
-        </div>
-        <div class="modal-footer">
-          <div class="devLanguages">
-            <ul>
-                <l>CSS</li>
-                <li>HTML</li>
-                <li>Bootstrap</li>
-                <li>Ruby</li>
-            </ul>
-          </div>
-          <div class="modalButtons">
-            <div class="liveDemo"><a href="${currentWork.seeLive}">See Live</a><img src="./images/modalIcon.png" alt="See Live Icon"></div>
-            <div class="sourcecode"><a href="${currentWork.seeSource}">See Source</a><img src="./images/github.png" alt="github image"></div>
-          </div>
-        </div>
-  `;
-
-  modal.append(content);
-
-  span.addEventListener('click', () => {
-    document.getElementsByClassName('modal')[0].style.display = 'none';
-  });
-
-  document.querySelectorAll('.liveDemo').forEach((e) => {
-    e.addEventListener('click', () => {
-      window.open(currentWork.projectSection.seeLive);
-    });
-  });
-
-  document.querySelectorAll('.sourceCode').forEach((e) => {
-    e.addEventListener('click', () => {
-      window.open(currentWork.projectSection.seeSource);
+for (let i = 0; i < workBtn.length; i += 1) {
+  workBtn[i].addEventListener('click', () => {
+    document.body.innerHTML = popUp(i);
+    const closeBtn = document.querySelector('.close');
+    closeBtn.addEventListener('click', async () => {
+      window.location.reload();
     });
   });
 }
-
-const clickAction = document.querySelectorAll('.card-btn');
-clickAction.forEach((e) => {
-  e.addEventListener('click', pop);
-});
