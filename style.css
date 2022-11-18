@@ -483,26 +483,14 @@ h4 {
 
 /* Modal Pop-up */
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 1%;
-  right: 1%;
-  width: 95%;
-  height: 98%;
-  background: #191765;
-  border: 1px solid #aaa;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  margin: 3% auto;
-  z-index: 20;
-  padding-top: 5%;
-}
-
 .content {
   margin: 10% auto;
   width: 90%;
-  padding-top: 7%;
+  padding-top: 0;
+  background: #191765;
+  border: 1px solid #aaa;
+  padding: 3%;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
 }
 
 .someHeader {
@@ -601,6 +589,7 @@ h4 {
 
 .close:hover,
 .close:focus {
+  font-size: 30px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -626,6 +615,7 @@ h4 {
     right: 0;
     background: rgba(25, 23, 101, 0.16);
     z-index: 14;
+    backdrop-filter: blur(4px);
   }
 
   .container > div {
@@ -652,7 +642,6 @@ h4 {
     padding: 20px;
     width: 84%;
     margin: 0 auto;
-    backdrop-filter: blur(4px);
   }
 
   .nav-toggle {
@@ -996,27 +985,11 @@ h4 {
     border-top: none;
   }
 
-  /* Modal Content/Box */
-  .modal {
-    display: none;
-    position: fixed;
-    width: 83%;
-    height: 93%;
-    background: #191765;
-    border: 1px solid #aaa;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    margin: 2% auto;
-    left: 4%;
-    right: 4%;
-    z-index: 20;
-    padding: 0;
-  }
-
   .content {
-    margin: 0 auto;
+    margin: 1% auto;
     padding: 2%;
-    width: 65%;
-    height: 70%;
+    width: 80%;
+    height: 60%;
   }
 
   .someHeader {
